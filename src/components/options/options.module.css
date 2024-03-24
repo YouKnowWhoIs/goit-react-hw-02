@@ -1,0 +1,11 @@
+.option-button {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  width: 70px;
+  background-color: azure;
+}
+
+.option-button:not(:last-child) {
+  margin-right: 5px;
+}

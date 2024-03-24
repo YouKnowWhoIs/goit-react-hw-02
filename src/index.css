@@ -1,0 +1,30 @@
+@import url("./components/description/description.module.css");
+@import url("./components/options/options.module.css");
+@import url("./components/feedback/feedback.moule.css");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fff;
+  border-color: #b0afaf;
+}
