@@ -4,7 +4,7 @@ import "./index.css";
 import { Description } from "./components/description/description.jsx";
 import { Options } from "./components/options/options.jsx";
 import { Feedback } from "./components/feedback/feedback.jsx";
-import { NotFeedback } from "./components/notFeedback/notFeedback.jsx";
+import { Notification } from "./components/notification/notification.jsx";
 
 function App() {
   const [value, setValue] = useState(() => {
@@ -32,9 +32,7 @@ function App() {
   };
 
   const totalFeedback = value.good + value.neutral + value.bad;
-  const totalResult = Math.round(
-    ((value.good + value.neutral) / totalFeedback) * 100
-  );
+  const totalResult = Math.round((value.good / totalFeedback) * 100);
 
   return (
     <>
@@ -47,7 +45,7 @@ function App() {
           totalResult={totalResult}
         />
       ) : (
-        <NotFeedback />
+        <Notification />
       )}
     </>
   );
